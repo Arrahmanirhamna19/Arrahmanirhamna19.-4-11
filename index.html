@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perbandingan Fitur Privasi: Google Chrome vs. Mozilla Firefox</title>
+  <style>
+    :root {
+      --primary-color: #0f172a;
+      --firefox-color: #e66000;
+      --chrome-color: #1a73e8;
+      --bg-light: #f8fafc;
+      --border-color: #e2e8f0;
+      --text-dark: #1e293b;
+      --text-muted: #64748b;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
+      line-height: 1.6;
+      padding: 2rem 1rem;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      background: #ffffff;
+      padding: 2.5rem;
+      border-radius: 12px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05), 0 8px 10px -6px rgba(0, 0, 0, 0.01);
+    }
+
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      text-align: center;
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    p.subtitle {
+      text-align: center;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+      font-size: 1rem;
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+
+    th, td {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      vertical-align: top;
+    }
+
+    th {
+      background-color: #f1f5f9;
+      font-weight: 600;
+      color: var(--primary-color);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+    }
+
+    th.category-header {
+      width: 22%;
+    }
+
+    th.firefox-header {
+      width: 39%;
+      border-top: 3px solid var(--firefox-color);
+    }
+
+    th.chrome-header {
+      width: 39%;
+      border-top: 3px solid var(--chrome-color);
+    }
+
+    tbody tr:hover {
+      background-color: #f8fafc;
+    }
+
+    .category-title {
+      font-weight: 600;
+      color: var(--primary-color);
+    }
+
+    .badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      margin-bottom: 0.35rem;
+    }
+
+    .badge-firefox {
+      background-color: #fff3e0;
+      color: #d97706;
+    }
+
+    .badge-chrome {
+      background-color: #e8f0fe;
+      color: #1a73e8;
+    }
+
+    .section-title {
+      margin-top: 3rem;
+      margin-bottom: 1.25rem;
+      font-size: 1.35rem;
+      color: var(--primary-color);
+      border-bottom: 2px solid var(--border-color);
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    ul li {
+      position: relative;
+      padding-left: 1.5rem;
+      margin-bottom: 0.75rem;
+    }
+
+    ul li::before {
+      content: "•";
+      position: absolute;
+      left: 0.5rem;
+      color: var(--firefox-color);
+      font-weight: bold;
+    }
+
+    .winner-box {
+      background-color: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      border-left: 4px solid #16a34a;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-top: 2rem;
+    }
+
+    .winner-box h3 {
+      color: #15803d;
+      margin-bottom: 0.5rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.25rem;
+      }
+
+      th, td {
+        padding: 0.75rem 0.85rem;
+        font-size: 0.875rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Perbandingan Fitur Privasi Peramban</h1>
+    <p class="subtitle">Analisis mendalam mengenai perlindungan privasi antara Google Chrome dan Mozilla Firefox</p>
+
+    <div class="table-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th class="category-header">Kategori Fitur</th>
+            <th class="firefox-header">Mozilla Firefox</th>
+            <th class="chrome-header">Google Chrome</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="category-title">Perlindungan Pelacakan</td>
+            <td>
+              <span class="badge badge-firefox">Enhanced Tracking Protection</span><br>
+              Memblokir pelacak lintas situs, penambang kripto, dan <em>fingerprinter</em> secara otomatis secara default.
+            </td>
+            <td>
+              <span class="badge badge-chrome">Privacy Sandbox</span><br>
+              Mengontrol kukis pihak ketiga melalui kontrol iklan internal. Menyediakan opsi permintaan dasar "Do Not Track".
+            </td>
+          </tr>
+          <tr>
+            <td class="category-title">Isolasi Kukis</td>
+            <td>
+              <span class="badge badge-firefox">Total Cookie Protection</span><br>
+              Membuat "toples kukis" terpisah untuk setiap situs web, mencegah pelacakan lintas situs secara menyeluruh.
+            </td>
+            <td>
+              Mengelompokkan izin situs, namun data sesi bersama tetap bisa tersimpan lintas situs melalui kukis pihak ketiga jika diizinkan.
+            </td>
+          </tr>
+          <tr>
+            <td class="category-title">Penjelajahan Pribadi</td>
+            <td>
+              <strong>Private Browsing:</strong> Menghapus data penjelajahan lokal dan secara aktif memblokir pelacak daring yang dikenal saat jendela aktif.
+            </td>
+            <td>
+              <strong>Incognito Mode:</strong> Mencegah riwayat lokal, data pencarian, dan kukis tersimpan di perangkat setelah jendela ditutup.
+            </td>
+          </tr>
+          <tr>
+            <td class="category-title">Perlindungan Sidik Jari</td>
+            <td>
+              Fitur bawaan yang mengelabui algoritma pelacak yang berusaha memprofilkan konfigurasi perangkat keras, layar, dan font.
+            </td>
+            <td>
+              Pertahanan dasar terintegrasi dalam keamanan bawaan, namun masih rentan terhadap pengumpulan telemetri perangkat.
+            </td>
+          </tr>
+          <tr>
+            <td class="category-title">Kemudahan Penggunaan</td>
+            <td>
+              <strong>Tinggi:</strong> Ikon Perisai sekali klik di bilah alamat memudahkan kontrol toggle; memiliki tingkatan perlindungan (Standard & Strict).
+            </td>
+            <td>
+              <strong>Sedang:</strong> Pengaturan terbagi antara konfigurasi peramban lokal dan kontrol aktivitas Akun Google terpusat.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 class="section-title">Cara Fitur Privasi Melindungi Pengguna</h2>
+    <ul>
+      <li><strong>Mencegah Profiling Perilaku:</strong> Memblokir pelacak menghentikan jaringan iklan membangun profil minat dan riwayat belanja Anda.</li>
+      <li><strong>Meminimalkan Pencurian Identitas:</strong> Fitur anti-phishing dan pemantauan kebocoran kata sandi menjaga kredensial pribadi tetap aman.</li>
+      <li><strong>Membatasi Akses Data Lokal:</strong> Mode privat mencegah pengguna lain pada perangkat bersama melihat riwayat pencarian sensitif.</li>
+      <li><strong>Melindungi Sumber Daya Perangkat:</strong> Memblokir skrip tersembunyi mencegah penggunaan berlebih pada CPU dan baterai.</li>
+    </ul>
+
+    <h2 class="section-title">Dampak Terhadap Operasional Bisnis</h2>
+    <ul>
+      <li><strong>Efisiensi Target Menurun:</strong> Pemasar digital harus mengandalkan iklan berbasis konteks daripada iklan perilaku yang terpersonalisasi.</li>
+      <li><strong>Peningkatan Biaya Kepatuhan:</strong> Mendorong bisnis untuk mengumpulkan data pihak pertama (first-party data) secara transparan sesuai standar regulasi (GDPR/CCPA).</li>
+      <li><strong>Kehilangan Detail Analitik:</strong> Platform e-commerce menerima alur data pengguna yang kurang spesifik untuk analisis atribusi penjualan.</li>
+    </ul>
+
+    <div class="winner-box">
+      <h3>Peramban Mana yang Terbaik untuk Privasi?</h3>
+      <p><strong>Mozilla Firefox</strong> memberikan perlindungan privasi yang lebih unggul karena dioperasikan oleh organisasi nirlaba tanpa konflik kepentingan dari model bisnis iklan digital. Firefox juga mengaktifkan perlindungan privasi secara otomatis (privacy-by-default) dan menggunakan mesin Gecko yang independen.</p>
+    </div>
+  </div>
+
+</body>
+</html>
